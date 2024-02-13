@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import Page from "./Page";
 
 function App() {
+  const [show, setShow] = useState(false);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+      {show ? (
+        <Page />
+      ) : (
+        <>
+          <button
+          className="border-2 rounded-[30px] p-5 font-semibold
+            
+          	hover:bg-violet-400 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 "
+          onClick={() => setShow(!show)}
         >
-          Learn React
-        </a>
-      </header>
+          For my favourite person
+        </button>
+        <p className="font-semibold">Our first velentine together as a couple, Love you eternity Mr. Gorai 😘</p>
+        </>
+      )}
     </div>
   );
 }
