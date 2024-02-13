@@ -18,7 +18,7 @@ function App() {
         >
           For my favourite person
         </button>
-        <p className="font-semibold">Our first velentine together as a couple, Love you eternity Mr. Gorai 😘</p>
+        <p className="font-semibold">Our first valentine together as a couple, Love you eternity Mr. Gorai 😘</p>
         </>
       )}
     </div>
